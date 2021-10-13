@@ -1,0 +1,4 @@
+select *
+from estadisticas_base as e, pokemon_movimiento_forma as mov, tipo as t, pokemon as p
+where e.numero_pokedex = (
+select p.numero_pokedex from pokemon where nombre = 'Pikachu');
